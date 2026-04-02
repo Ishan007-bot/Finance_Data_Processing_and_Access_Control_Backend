@@ -45,8 +45,6 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-// Index on email for fast lookups during login
-userSchema.index({ email: 1 });
 
 // Remove sensitive fields when converting to JSON
 userSchema.methods.toJSON = function () {

@@ -30,7 +30,11 @@ app.get('/api/health', (req, res) => {
 });
 
 // --------------- API Routes ---------------
-// Routes will be mounted here in Phase 2+
+const authRoutes = require('./modules/auth/auth.routes');
+const userRoutes = require('./modules/users/user.routes');
+
+app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
 
 // --------------- 404 Handler ---------------
 
