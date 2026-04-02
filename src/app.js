@@ -32,9 +32,11 @@ app.get('/api/health', (req, res) => {
 // --------------- API Routes ---------------
 const authRoutes = require('./modules/auth/auth.routes');
 const userRoutes = require('./modules/users/user.routes');
+const recordRoutes = require('./modules/records/record.routes');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/records', recordRoutes);
 
 // --------------- 404 Handler ---------------
 
