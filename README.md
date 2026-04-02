@@ -1,4 +1,4 @@
-# Zorvyn Finance Backend
+# Finance Data Processing and Access Control Backend
 
 A Finance Data Processing and Access Control Backend built with **Node.js**, **Express**, **MongoDB**, and **JWT authentication**. Features role-based access control, financial records management, dashboard analytics, and comprehensive API documentation.
 
